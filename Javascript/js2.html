@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            function add(a,b){
+                return a+b;
+            }
+            var sum=add(10,10);
+            console.log("Sum is "+sum);
+
+            function countVowels(msg){
+
+                return "";
+            }
+            var n=countVowels("Hello All, Have a nice Day !!!!");
+            console.log("Number of vowels : "+n);
+
+            function sumOfAllNumbers(nums){
+                var sum=0;
+               /* for(var i=0;i<nums.length;i++){ //Traditional Loop 
+                    sum=sum+nums[i];
+                }*/
+            /*   for(var i in nums){ //returns index
+                    sum=sum+nums[i];
+               }
+                    */
+                for(var v of nums){ //returns value not index (like java for each)
+                    sum =sum +v;
+                }
+                return sum;
+            }
+            var nums=[10,20,30,40,50,60];
+            var s=sumOfAllNumbers(nums);
+            console.log("Sum is "+s)
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            //A company wants to find out the Email provider
+            //Hint : use split function of string ....
+            function findEmailProvider(email){
+             var mailid=  email.split("@");
+             if(mailid.length==2){
+                return mailid[1];
+             }
+             else return "Invalid Email id ";
+            }
+
+            console.log("albin@gmail.com");// gmail.com
+            console.log("Alok@yahoo.com");//  Yahoo.com
+            console.log("hello")//Invalid Email id 
+
+            function maskMobileNumber(mobileNum){
+                
+                return "";
+            }
+            console.log(maskMobileNumber(1234567890));//XXXXXX7890
+            </script>
+    </head>
+    <body>
+
+    </body>
+</html>

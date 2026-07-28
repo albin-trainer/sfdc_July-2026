@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <script>
+            function hello(){
+                 {
+                    var s="Hello"; //the scope is not local
+                    let x="Good Evening";
+                    console.log(x);
+                    const y=10; //local + constant (cant update)
+                    console.log(y);
+                 }
+                     console.log(s);//Will work fine ....
+                   console.log(y); //ERROR !!!!
+                   console.log(x); //ERROR !!!!
+            }
+            hello();
+        </script>
+    </head>
+    <body>
+        <h1> Var and Let </h1>
+    </body>
+</html>

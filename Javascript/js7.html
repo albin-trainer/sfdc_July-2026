@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script>
+            function add(a,b,c){
+                console.log(a+b+c);
+            }
+             function add(a,b,c,d){
+                console.log(a+b+c+d);
+            }
+             function add(a,b){ //overrides all functions .....
+                console.log(b);
+                console.log(a+b);
+                console.log(arguments.length)
+                for(let i=0;i<arguments.length;i++){
+                    console.log(arguments[i])
+                }
+            }
+            add(1);
+            console.log("-----------------")
+            add(1,2,3,4,5,6,7,8,9);
+        </script>
+    </head>
+</html>
