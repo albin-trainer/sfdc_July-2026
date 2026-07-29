@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            div {
+                 width: 500px;
+                 height: 500px;
+                 background-color: rgb(211, 190, 223);
+                 margin-left: 30%;
+                 margin-top: 3%;
+                 padding: 2%
+            }
+            </style>
+            <script>
+                function addEmp() {
+                    let empid = document.getElementById("empid").value;
+                    let empname = document.getElementById("empname").value;
+                    let address = document.getElementById("address").value;
+                    let emp = { "id": empid, "ename": empname, "address": address };
+                    console.log(`Employee id is ${emp.id} , name is ${emp.ename} and address is ${emp.address}`);
+                    document.getElementById("p1").innerHTML = `Employee id is ${emp.id} , name is ${emp.ename} and address is ${emp.address}`;
+                }
+            </script>
+    </head>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td><label>Enter the Emp id:</label> </td>
+                    <td> <input type="text" id="empid">  </td>
+               </tr>
+              <tr>
+                <td> <label>Enter the Emp Name:</label> </td>
+               <td> <input type="text" id="empname"> </td>
+            </tr>
+              <tr>
+                <td> <label>Enter the address:</label> </td>
+               <td> <input type="text" id="address"> </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td> <button onclick="addEmp()">Add Employee</button> </td>
+            </tr>
+            </table>
+            <p id="p1">Its Paragraph</p>
+        </div>
+    </body>
+</html>

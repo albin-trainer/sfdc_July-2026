@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <script>
+            let x=10;
+            console.log("X is "+x);
+            //Template Expression
+            console.log(`The value of x is ${x}`)
+            
+            let now = new Date(); //current date 
+            console.log(now);
+
+        //any specific date pass as string
+            let d1 = new Date("2026-7-29");  
+            console.log(`Date is ${d1}`);
+            
+            // July (6) // here month starts frm 0
+        let d2 = new Date(2026, 6, 29); 
+            console.log(`Date is d2 ${d2}`);
+
+let d3 = new Date(2025, 6, 29, 10, 30, 45);
+
+console.log(d3);
+
+let diff= now-d3; //return as milli secs
+let days = diff / (1000 * 60 * 60 * 24);
+console.log(`Difference is days ${days}`);
+
+        </script>
+    </head>
+    <body>
+    </body>
+    </html>

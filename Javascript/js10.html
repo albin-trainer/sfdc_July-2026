@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <script>
+            //Javascript object
+            let emp={"id":101, "ename":"Alok","address":"Bangalore"};
+            console.log(`${emp.ename} is living in ${emp.address}`);
+            let cust={"id":1001,"custname":"Mithun","address":["Whitefield","IndraNagar"]}
+            //display the details of customer .....
+            console.log(`customer id is ${cust.id} , name is ${cust.custname}`);
+            console.log("---Address---");
+            for(let addr of cust.address){
+                console.log(addr)
+            }
+            let nums=[1,2,3,4,5];
+            let [a,b]=nums; // Array De Structuring ....
+            console.log(a);
+            let {id,custname}=cust; // Object De Structuring ....
+            console.log(id,custname)
+        </script>
+    </head>
+    <body>
+        <h1> Javascript objects</h1>
+    </body>
+</html>

@@ -2,11 +2,14 @@
     <head>
         <script>
             function fileExtensionFinder(fileName){
-                return "";
+               let f= fileName.split(".");
+               if(f.length>1)
+                return "Valid File"
+                return "Invalid file";
             }
             console.log(fileExtensionFinder("abcd.pdf"))//prints pdf
             console.log(fileExtensionFinder("mydoc.doc"))//prints doc
-            console.log("hello")//not a valid file
+            console.log(fileExtensionFinder("mydocdoc"))//not a valid file
             console.log(fileExtensionFinder("my.file.xls"));//prints xls
         </script>
     </head>
