@@ -31,8 +31,8 @@ List job titles with at least two employees holding that job.
 
 Show the department name and count of employees for each, ordered by count descending.
 
-Count  the employees hired in each month
- Count employees hired in each year
+Count  the employees hired in each month  order by month
+ Count employees hired in each year order by year
  Find the average salary department-wise for employees hired after 2005.
 Display the number of employees whose names start with each alphabet.
 Find the highest salary paid every year.
