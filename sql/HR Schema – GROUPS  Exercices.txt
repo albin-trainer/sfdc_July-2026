@@ -23,7 +23,8 @@ Find total employees and average salary per department, only for departments loc
 Show total commission earned by employees in each department (if applicable).
 
 Find departments where minimum salary is less than 5,000.
-
+  
+     //Need to use sub query 
 Display the average salary per department, but only include those with an average above overall company average salary.
 
 List job titles with at least two employees holding that job.
@@ -31,4 +32,10 @@ List job titles with at least two employees holding that job.
 Show the department name and count of employees for each, ordered by count descending.
 
 Count  the employees hired in each month
-. Count employees hired in each year
+ Count employees hired in each year
+ Find the average salary department-wise for employees hired after 2005.
+Display the number of employees whose names start with each alphabet.
+Find the highest salary paid every year.
+Find the number of employees who joined in each quarter.
+Count employees in each department and job combination
+Find the total salary paid every year
